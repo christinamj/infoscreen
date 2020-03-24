@@ -1,0 +1,64 @@
+main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#containerY {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#solcontainer {
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+}
+
+#solcontainer #sol {
+  width: 100vw;
+  background-color: yellow;
+  scroll-snap-align: end;
+}
+
+#containerX {
+  display: flex;
+  flex-direction: row;
+  width: calc(500vw - 3vw);
+  overflow: scroll;
+  height: 97vh;
+  scroll-snap-type: x mandatory;
+  perspective: 2px;
+  scroll-behavior: smooth;
+}
+
+#punkter {
+  height: 3vw;
+}
+
+section {
+  font-size: 40rem;
+}
+
+#containerX #stearinlys {
+  background-color: hotpink;
+  width: 100vw;
+  scroll-snap-align: end;
+}
+
+#containerX #lampe {
+  background-color: tomato;
+  width: 100vw;
+  scroll-snap-align: end;
+}
+
+#containerX #arbejdsdag {
+  background-color: greenyellow;
+  width: 100vw;
+  scroll-snap-align: end;
+}
+
+#containerX #timessquare {
+  background-color: orange;
+  width: 100vw;
+  scroll-snap-align: end;
+}
