@@ -1,3 +1,5 @@
+@use 'partials/general';
+
 main {
   display: flex;
   flex-flow: row nowrap;
@@ -16,7 +18,7 @@ main {
 
 #solcontainer #sol {
   width: 100vw;
-  background-color: yellow;
+  background-color: general.$bg-color;
   scroll-snap-align: end;
 }
 
