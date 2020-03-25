@@ -1,12 +1,15 @@
+"require(@babel/polyfill)";
+
 window.addEventListener("DOMContentLoaded", start);
 
 function start() {
-  //   document.querySelector(".knap1").addEventListener("click", clickedFirst);
-  //   document.querySelector(".knap2").addEventListener("click", clickedSecond);
-  //   document.querySelector(".knap3").addEventListener("click", clickedThird);
-  //   document.querySelector(".knap4").addEventListener("click", clickedFour);
+  console.log("running");
+  getJson();
 }
 
-function clickedFirst() {
-  document.querySelector("");
+async function getJson() {
+  console.log("JSON");
+  let response = await fetch("static/solen.svg");
+  let mySvgData = await response.text();
+  //   document.querySelector("#lampe").innerHTML = mySvgData;
 }

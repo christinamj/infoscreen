@@ -25,7 +25,7 @@ main {
 #containerX {
   display: flex;
   flex-direction: row;
-  width: calc(500vw - 3vw);
+  width: calc(500vw - 1vw);
   overflow: scroll;
   height: 97vh;
   scroll-snap-type: x mandatory;
@@ -63,4 +63,8 @@ section {
   background-color: orange;
   width: 100vw;
   scroll-snap-align: end;
+}
+
+.scenelampe {
+  height: 100vh;
 }
