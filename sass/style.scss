@@ -27,14 +27,30 @@ main {
   flex-direction: row;
   width: calc(500vw - 1vw);
   overflow: scroll;
-  height: 97vh;
   scroll-snap-type: x mandatory;
   perspective: 2px;
   scroll-behavior: smooth;
+  background-color: general.$bg-color;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  height: 55vw;
 }
 
 #punkter {
-  height: 3vw;
+  padding-top: 5vw;
+  height: 15vw;
+  background-color: general.$bg-color;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#punkter a:visited {
+  color: white;
+}
+
+#punkter a {
+  color: white;
+  padding: 25px;
 }
 
 section {
@@ -42,33 +58,86 @@ section {
 }
 
 #containerX #stearinlys {
-  background-color: hotpink;
+  background-color: general.$bg-color;
   width: 100vw;
   scroll-snap-align: end;
+  height: 55vw;
+}
+
+.stearincon {
+  width: 100vw;
+  // background-color: general.$bg-color;
+  background-color: general.$bg-color;
+  display: flex;
+  justify-content: center;
+  height: 55vw;
 }
 
 #containerX #stearin {
-  height: 50vh;
+  width: 40vw;
 }
 
-#containerX #lampe {
-  background-color: tomato;
+.lampecon {
   width: 100vw;
-  scroll-snap-align: end;
+  background-color: general.$bg-color;
+  display: flex;
+  justify-content: center;
+  height: 55vw;
+}
+
+#containerX .lampescene {
+  width: 40vw;
+}
+
+.arbejdecon {
+  width: 100vw;
+  background-color: general.$bg-color;
+  display: flex;
+  justify-content: center;
+}
+
+#containerX .arbejdescene {
+  width: 40vw;
+}
+
+.timescon {
+  width: 100vw;
+  background-color: general.$bg-color;
+  display: flex;
+  justify-content: center;
+  height: 55vw;
+}
+
+#containerX .timesscene {
+  width: 50vw;
 }
 
 #containerX #arbejdsdag {
   background-color: greenyellow;
   width: 100vw;
   scroll-snap-align: end;
+  height: 55vw;
 }
 
 #containerX #timessquare {
   background-color: orange;
   width: 100vw;
   scroll-snap-align: end;
+  height: 55vw;
 }
 
-.scenelampe {
-  height: 100vh;
+#containerX #lampe {
+  background-color: orange;
+  width: 100vw;
+  scroll-snap-align: end;
+  height: 55vw;
+}
+
+// .scenelampe {
+//   height: 100vh;
+// }
+
+rect.times0 {
+  fill: rgb(10, 10, 10);
+  stroke: rgb(10, 10, 10);
 }

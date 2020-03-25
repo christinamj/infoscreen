@@ -4,13 +4,13 @@
       "img": "solen.svg"
     },
     {
-      "img": "stearin.svg"
+      "img": "scenestearin.svg"
     },
     {
       "img": "stearinlys.svg"
     },
     {
-      "img": "glodepare.svg"
+      "img": "scenelampe_glodepare.svg"
     },
     {
       "img": "scene_scene3.svg"
@@ -23,6 +23,9 @@
     },
     {
       "img": "scene_skrivemaskine"
+    },
+    {
+      "img": "times_times.svg"
     }
   ]
 }
