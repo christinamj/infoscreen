@@ -6,20 +6,25 @@ main {
 }
 
 #containerY {
-  display: flex;
+  background-color: general.$bg-color;
   flex-flow: column nowrap;
 }
 
-#solcontainer {
+.solcontainer {
+  display: flex;
+  justify-content: center;
   overflow: scroll;
   scroll-snap-type: y mandatory;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
-#solcontainer #sol {
-  width: 100vw;
-  background-color: general.$bg-color;
+.sol {
+  width: 100%;
+  height: 100%;
   scroll-snap-align: end;
+  transform: scale(5);
 }
 
 #containerX {
@@ -35,10 +40,6 @@ main {
 
 #punkter {
   height: 3vw;
-}
-
-section {
-  font-size: 40rem;
 }
 
 #containerX #stearinlys {
@@ -71,4 +72,56 @@ section {
 
 .scenelampe {
   height: 100vh;
+}
+
+// ANIMATIONER
+
+/*ZOOM OUT*/
+
+.zoom_out {
+  animation-name: zoom_out_kf;
+  animation-duration: 8s;
+}
+
+@keyframes zoom_out_kf {
+  0% {
+    transform: scale(5);
+  }
+
+  50% {
+    transform: scale(0.2) translateY(0%);
+  }
+
+  100% {
+    transform: scale(0.2) translateY(300%);
+  }
+}
+
+/* SHAKE */
+
+.shake {
+  animation: shake-kf 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+}
+
+@keyframes shake-kf {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
