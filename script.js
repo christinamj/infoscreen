@@ -16,9 +16,13 @@
 
 fetch("data.json")
   .then(result => result.json())
-  .then(data => displayItem(data));
+  .then(data => {
+    document.querySelector(".stearin").innerHTML = "<img src='" + data.data[2].img + "'>";
+    console.log(data);
+  });
 
-function displayItem(data) {
-  console.log("HElloooo");
-  console.log(data);
-}
+// function displayItem(data) {
+//   console.log("HElloooo");
+//   console.log(data);
+// ;
+// }
