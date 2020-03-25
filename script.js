@@ -1,24 +1,19 @@
 "require(@babel/polyfill)";
 
-// window.addEventListener("DOMContentLoaded", start);
+window.addEventListener("DOMContentLoaded", start);
 
-// function start() {
-//   console.log("running");
-//   getJson();
-// }
+function start() {
+  console.log("running");
+  getJson();
+}
 
-// async function getJson() {
-//   console.log("JSON");
-//   let response = await fetch("static/solen.svg");
-//   let mySvgData = await response.text();
-//   //   document.querySelector("#lampe").innerHTML = mySvgData;
-// }
+async function getJson() {
+  console.log("JSON");
+  let response1 = await fetch("solen.svg");
+  let mySvgData1 = await response1.text();
+  document.querySelector("#sol").innerHTML = mySvgData1;
 
-fetch("data.json")
-  .then(result => result.json())
-  .then(data => displayItem(data));
-
-function displayItem(data) {
-  console.log("HElloooo");
-  console.log(data);
+  let response2 = await fetch("stearin.svg");
+  let mySvgData2 = await response2.text();
+  document.querySelector("#stearin").innerHTML = mySvgData2;
 }

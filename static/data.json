@@ -1,13 +1,28 @@
 {
   "data": [
     {
-      "img": "glodepare.svg"
-    },
-    {
       "img": "solen.svg"
     },
     {
       "img": "stearin.svg"
+    },
+    {
+      "img": "stearinlys.svg"
+    },
+    {
+      "img": "glodepare.svg"
+    },
+    {
+      "img": "scene_scene3.svg"
+    },
+    {
+      "img": "scene_komfur.svg"
+    },
+    {
+      "img": "scene_stovsuger.svg"
+    },
+    {
+      "img": "scene_skrivemaskine"
     }
   ]
 }
