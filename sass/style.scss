@@ -86,7 +86,7 @@ section {
 #containerX #stearin {
   width: 35vw;
   position: relative;
-  top: -4vw;
+  top: -6vw;
 }
 
 .lampecon {
@@ -100,7 +100,7 @@ section {
 #containerX .lampescene {
   width: 35vw;
   position: relative;
-  top: -4vw;
+  top: -6vw;
 }
 
 .arbejdecon {
@@ -113,7 +113,7 @@ section {
 #containerX .arbejdescene {
   width: 35vw;
   position: relative;
-  top: -4vw;
+  top: -6vw;
 }
 
 .timescon {
@@ -127,7 +127,7 @@ section {
 #containerX .timesscene {
   width: 50vw;
   position: relative;
-  top: -4vw;
+  top: -6vw;
 }
 
 #containerX #arbejdsdag {
@@ -178,9 +178,9 @@ rect.times0 {
   stroke: rgb(10, 10, 10);
 }
 
-// .startknap {
-//   display: none;
-// }
+.startknap {
+  display: none;
+}
 
 // ANIMATIONER
 
@@ -261,7 +261,7 @@ ellipse.st20 {
   #containerX #stearin {
     width: 35vw;
     position: relative;
-    top: -6vw;
+    top: -8vw;
     margin-top: 6vw;
   }
 
@@ -270,7 +270,7 @@ ellipse.st20 {
   #containerX .lampescene {
     width: 35vw;
     position: relative;
-    top: -7vw;
+    top: -8vw;
     margin-top: 6vw;
   }
 
