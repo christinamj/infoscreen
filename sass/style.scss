@@ -310,12 +310,93 @@ ellipse.lampe31 {
   fill: #0c0c0c;
 }
 
+#Lag_6 ellipse.times10 {
+  fill: transparent;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  // animation-delay: 0.5s;
+}
+
+.blink {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+.blinkfast {
+  animation-name: blinkFast;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#times {
+  animation-name: blinkFast;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#pink .times10 {
+  animation-name: blinkFast;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#screenlight .times6 {
+  animation-name: blinkColor;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#Lag_1 polygon.times20 {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#Lag_1 path.times22 {
+  fill: general.$bg-color;
+}
+
 @keyframes light {
   from {
     fill: transparent;
   }
   to {
     fill: #ffe799;
+  }
+}
+
+@keyframes blink {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ffe799;
+  }
+}
+
+@keyframes blinkFast {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fcff65;
+  }
+}
+
+@keyframes blinkColor {
+  from {
+    fill: turquoise;
+  }
+  to {
+    fill: blue;
   }
 }
 

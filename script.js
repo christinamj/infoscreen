@@ -44,7 +44,7 @@ async function getJson4() {
 }
 
 async function getJson5() {
-  let response5 = await fetch("times_times.svg");
+  let response5 = await fetch("times_times2-01.svg");
   let mySvgData5 = await response5.text();
   document.querySelector(".timesscene").innerHTML = mySvgData5;
 }
