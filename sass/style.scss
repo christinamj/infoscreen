@@ -89,14 +89,6 @@ section {
   top: -6vw;
 }
 
-// .tekst {
-//   width: 25vw;
-//   height: 25vh;
-//   color: white;
-//   font-size: 1.2rem;
-//   margin: 2rem;
-// }
-
 .lampecon {
   width: 100vw;
   background-color: general.$bg-color;
@@ -188,6 +180,59 @@ rect.times0 {
 
 .startknap {
   display: none;
+}
+
+// TEKST
+
+.tekst {
+  color: white;
+  font-size: 1.2rem;
+  margin: 2rem;
+  line-height: 2rem;
+}
+
+.tekst_lys {
+  width: 34vw;
+  position: relative;
+  bottom: 35vh;
+  left: 8vw;
+}
+
+.tekst_lampe {
+  width: 45vw;
+  position: relative;
+  bottom: 35vh;
+  left: 40vw;
+  text-align: right;
+}
+
+.tekst_vacum {
+  width: 40vw;
+  position: relative;
+  bottom: 55vh;
+  left: 4vw;
+}
+
+.tekst_skriv {
+  width: 15vw;
+  position: relative;
+  bottom: 55vh;
+  left: 75vw;
+  text-align: right;
+}
+
+.tekst_komfur {
+  width: 32vw;
+  position: relative;
+  bottom: 40vh;
+  left: 5vw;
+}
+
+.tekst_times {
+  width: 80vw;
+  position: relative;
+  top: 20vh;
+  left: 8vw;
 }
 
 // ANIMATIONER
