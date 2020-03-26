@@ -6,6 +6,7 @@ function start() {
   console.log("running");
   document.querySelector(".startknap").addEventListener("click", firstScene);
   document.querySelector(".zoom_out").addEventListener("animationend", showText);
+  document.querySelector("#punkter > a:nth-child(2)").addEventListener("click", secondScene);
   getJson();
   getJson2();
   getJson3();
@@ -50,6 +51,10 @@ async function getJson5() {
 
 function firstScene() {
   document.querySelector("ellipse.st20").classList.add("light");
+}
+
+function secondScene() {
+  document.querySelector("ellipse.lampe31").classList.add("light");
 }
 
 function showText() {
