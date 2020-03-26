@@ -4,6 +4,8 @@ window.addEventListener("DOMContentLoaded", start);
 
 function start() {
   console.log("running");
+  document.querySelector(".startknap").addEventListener("click", firstScene);
+  // document.querySelector(".zoom_out").addEventListener("animationend");
   getJson();
   getJson2();
   getJson3();
@@ -44,4 +46,8 @@ async function getJson5() {
   let response5 = await fetch("times_times.svg");
   let mySvgData5 = await response5.text();
   document.querySelector(".timesscene").innerHTML = mySvgData5;
+}
+
+function firstScene() {
+  document.querySelector("ellipse.st20").classList.add("light");
 }

@@ -1,5 +1,9 @@
 @use 'partials/general';
 
+body {
+  margin: 0;
+}
+
 main {
   display: flex;
   flex-flow: row nowrap;
@@ -8,6 +12,7 @@ main {
 #containerY {
   background-color: general.$bg-color;
   flex-flow: column nowrap;
+  scroll-behavior: smooth;
 }
 
 .solcontainer {
@@ -81,7 +86,7 @@ section {
 #containerX #stearin {
   width: 35vw;
   position: relative;
-  top: -12vw;
+  top: -4vw;
 }
 
 .lampecon {
@@ -95,7 +100,7 @@ section {
 #containerX .lampescene {
   width: 35vw;
   position: relative;
-  top: -12vw;
+  top: -4vw;
 }
 
 .arbejdecon {
@@ -108,7 +113,7 @@ section {
 #containerX .arbejdescene {
   width: 35vw;
   position: relative;
-  top: -12vw;
+  top: -4vw;
 }
 
 .timescon {
@@ -122,7 +127,7 @@ section {
 #containerX .timesscene {
   width: 50vw;
   position: relative;
-  top: -12vw;
+  top: -4vw;
 }
 
 #containerX #arbejdsdag {
@@ -151,6 +156,19 @@ section {
   top: -29vw;
 }
 
+#containerY {
+  text-align: center;
+  text-decoration: none;
+}
+
+#containerY a {
+  color: white;
+  font-size: 35px;
+  position: relative;
+  top: -55vw;
+  text-decoration: none;
+}
+
 // .scenelampe {
 //   height: 100vh;
 // }
@@ -159,6 +177,10 @@ rect.times0 {
   fill: rgb(10, 10, 10);
   stroke: rgb(10, 10, 10);
 }
+
+// .startknap {
+//   display: none;
+// }
 
 // ANIMATIONER
 
@@ -218,6 +240,7 @@ rect.times0 {
   animation-name: light;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 
 ellipse.st20 {
@@ -238,16 +261,16 @@ ellipse.st20 {
   #containerX #stearin {
     width: 35vw;
     position: relative;
-    top: -8vw;
-    margin-top: 3vw;
+    top: -6vw;
+    margin-top: 6vw;
   }
 
-  .timesscene,
-  .arbejdescene,
-  .lampescene {
+  #containerX .timesscene,
+  #containerX .arbejdescene,
+  #containerX .lampescene {
     width: 35vw;
     position: relative;
-    top: -8vw;
+    top: -7vw;
     margin-top: 6vw;
   }
 
