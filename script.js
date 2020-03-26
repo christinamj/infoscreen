@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", start);
 function start() {
   console.log("running");
   document.querySelector(".startknap").addEventListener("click", firstScene);
-  // document.querySelector(".zoom_out").addEventListener("animationend");
+  document.querySelector(".zoom_out").addEventListener("animationend", showText);
   getJson();
   getJson2();
   getJson3();
@@ -50,4 +50,10 @@ async function getJson5() {
 
 function firstScene() {
   document.querySelector("ellipse.st20").classList.add("light");
+}
+
+function showText() {
+  console.log("tekst");
+  document.querySelector(".startknap").style.display = "block";
+  document.querySelector(".zoom_out").style.display = "none";
 }
