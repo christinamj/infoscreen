@@ -21,7 +21,7 @@ async function getJson() {
 async function getJson2() {
   console.log("JSON");
 
-  let response2 = await fetch("scenestearin.svg");
+  let response2 = await fetch("scenestearin_stearin.svg");
   let mySvgData2 = await response2.text();
   document.querySelector("#stearin").innerHTML = mySvgData2;
 }
@@ -35,7 +35,7 @@ async function getJson3() {
 }
 
 async function getJson4() {
-  let response4 = await fetch("scene_scene3.svg");
+  let response4 = await fetch("scene3_elements.svg");
   let mySvgData4 = await response4.text();
   document.querySelector(".arbejdescene").innerHTML = mySvgData4;
 }
