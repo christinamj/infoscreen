@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  font-family: general.$font;
 }
 
 main {
@@ -247,6 +248,8 @@ rect.times0 {
 .zoom_out {
   animation-name: zoom_out_kf;
   animation-duration: 15s;
+  // animation-fill-mode: forwards;
+  // animation-iteration-count: linear;
 }
 
 @keyframes zoom_out_kf {
@@ -300,7 +303,7 @@ rect.times0 {
   animation-delay: 0.5s;
 }
 
-ellipse.st20 {
+ellipse.stearin20 {
   opacity: 0.37;
   fill: #0c0c0c;
 }
@@ -341,21 +344,21 @@ ellipse.lampe31 {
 
 #pink .times10 {
   animation-name: blinkFast;
-  animation-duration: 0.2s;
+  animation-duration: 0.4s;
   animation-iteration-count: infinite;
   animation-delay: 0.5s;
 }
 
 #screenlight .times6 {
   animation-name: blinkColor;
-  animation-duration: 0.2s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-delay: 0.5s;
 }
 
 #Lag_1 polygon.times20 {
   animation-name: blink;
-  animation-duration: 1s;
+  animation-duration: 1.3s;
   animation-iteration-count: infinite;
   animation-delay: 0.5s;
 }
@@ -363,6 +366,65 @@ ellipse.lampe31 {
 #Lag_1 path.times22 {
   fill: general.$bg-color;
 }
+
+#Lag_1 circle.times5 {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#Lag_1 ellipse.times5 {
+  animation-name: blinkColor;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#times circle.times10 {
+  animation-name: blinkFast;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#trekant ellipse.times6 {
+  animation-name: blinkFastStroke;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#spejl circle.times6 {
+  animation-name: blinkColorRed;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+// #screens polygon.times20,
+// #screens path.times29 {
+//   animation-name: blink;
+//   animation-duration: 0.9s;
+//   animation-iteration-count: infinite;
+//   animation-delay: 0.5s;
+// }
+
+#dioder2 ellipse.times31 {
+  animation-name: blinkFastGreen;
+  animation-duration: 0.1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+#dioder ellipse.times10 {
+  animation-name: blinkFastGreen;
+  animation-duration: 0.1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+//LIGHT KEYFRAMES//
 
 @keyframes light {
   from {
@@ -391,12 +453,39 @@ ellipse.lampe31 {
   }
 }
 
+@keyframes blinkFastGreen {
+  from {
+    fill: black;
+  }
+  to {
+    fill: #00ff00;
+  }
+}
+
+@keyframes blinkFastStroke {
+  from {
+    stroke: transparent;
+  }
+  to {
+    stroke: #fffc3d;
+  }
+}
+
 @keyframes blinkColor {
   from {
     fill: turquoise;
   }
   to {
     fill: blue;
+  }
+}
+
+@keyframes blinkColorRed {
+  from {
+    fill: pink;
+  }
+  to {
+    fill: hotpink;
   }
 }
 
@@ -435,6 +524,26 @@ ellipse.lampe31 {
   100% {
     transform: scale(1);
   }
+}
+
+//scale in//
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scalein {
+  animation-duration: 1s;
+  animation-name: scaleIn;
 }
 
 @media screen and (min-width: 1200px) {

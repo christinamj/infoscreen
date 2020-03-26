@@ -23,7 +23,6 @@ async function getJson() {
 
 async function getJson2() {
   console.log("JSON");
-
   let response2 = await fetch("scenestearin_stearin.svg");
   let mySvgData2 = await response2.text();
   document.querySelector("#stearin").innerHTML = mySvgData2;
@@ -31,7 +30,6 @@ async function getJson2() {
 
 async function getJson3() {
   console.log("JSON");
-
   let response3 = await fetch("scenelampe_glodepare.svg");
   let mySvgData3 = await response3.text();
   document.querySelector(".lampescene").innerHTML = mySvgData3;
@@ -49,11 +47,18 @@ async function getJson5() {
   document.querySelector(".timesscene").innerHTML = mySvgData5;
 }
 
+function showText() {
+  console.log("tekst");
+  document.querySelector(".startknap").style.display = "block";
+  document.querySelector(".zoom_out").style.display = "none";
+  document.querySelector(".startknap").classList.add("scalein");
+}
+
 function firstScene() {
-  document.querySelector("ellipse.st20").classList.add("light");
+  document.querySelector("ellipse.stearin20").classList.add("light");
   document
     .querySelectorAll(
-      "#lyskeglestearin > polygon.st21, #indre, #ydre, #lyskeglestearin > path.st24, #lyskeglestearin > path.st25, #lyskeglestearin > path.st26, #lyskeglestearin > path.st27, #lyskeglestearin > polygon.st25, #lyskeglestearin > path.st28, #lyskeglestearin > path:nth-child(12), #lyskeglestearin > path:nth-child(13), #lyskeglestearin > path:nth-child(14), #lyskeglestearin > path:nth-child(15), #lyskeglestearin > path.st29"
+      "#lyskeglestearin > polygon.stearin21, #indre, #ydre, #lyskeglestearin > path.stearin24, #lyskeglestearin > path.stearin25, #lyskeglestearin > path.stearin26, #lyskeglestearin > path.stearin27, #lyskeglestearin > polygon.stearin25, #lyskeglestearin > path.stearin28, #lyskeglestearin > path:nth-child(12), #lyskeglestearin > path:nth-child(13), #lyskeglestearin > path:nth-child(14), #lyskeglestearin > path:nth-child(15), #lyskeglestearin > path.stearin29"
     )
     .forEach(elm => {
       elm.classList.add("pulse");
@@ -65,10 +70,4 @@ function secondScene() {
   document.querySelector("#pare").classList.add("pulse");
   document.querySelector("#mork > path.lampe27").classList.add("pulse");
   document.querySelector("#outline").classList.add("pulse");
-}
-
-function showText() {
-  console.log("tekst");
-  document.querySelector(".startknap").style.display = "block";
-  document.querySelector(".zoom_out").style.display = "none";
 }
