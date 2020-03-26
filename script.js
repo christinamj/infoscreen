@@ -51,10 +51,20 @@ async function getJson5() {
 
 function firstScene() {
   document.querySelector("ellipse.st20").classList.add("light");
+  document
+    .querySelectorAll(
+      "#lyskeglestearin > polygon.st21, #indre, #ydre, #lyskeglestearin > path.st24, #lyskeglestearin > path.st25, #lyskeglestearin > path.st26, #lyskeglestearin > path.st27, #lyskeglestearin > polygon.st25, #lyskeglestearin > path.st28, #lyskeglestearin > path:nth-child(12), #lyskeglestearin > path:nth-child(13), #lyskeglestearin > path:nth-child(14), #lyskeglestearin > path:nth-child(15), #lyskeglestearin > path.st29"
+    )
+    .forEach(elm => {
+      elm.classList.add("pulse");
+    });
 }
 
 function secondScene() {
   document.querySelector("ellipse.lampe31").classList.add("light");
+  document.querySelector("#pare").classList.add("pulse");
+  document.querySelector("#mork > path.lampe27").classList.add("pulse");
+  document.querySelector("#outline").classList.add("pulse");
 }
 
 function showText() {
