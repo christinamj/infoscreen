@@ -35,8 +35,9 @@ main {
   perspective: 2px;
   scroll-behavior: smooth;
   background-color: general.$bg-color;
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  height: 55vw;
+  overflow-y: hidden;
+  height: 65vh;
+  padding-top: 5vw;
 }
 
 #punkter {
@@ -65,7 +66,7 @@ section {
   background-color: general.$bg-color;
   width: 100vw;
   scroll-snap-align: end;
-  height: 55vw;
+  height: 35vh;
 }
 
 .stearincon {
@@ -74,11 +75,13 @@ section {
   background-color: general.$bg-color;
   display: flex;
   justify-content: center;
-  height: 55vw;
+  height: 35vh;
 }
 
 #containerX #stearin {
-  width: 40vw;
+  width: 35vw;
+  position: relative;
+  top: -12vw;
 }
 
 .lampecon {
@@ -86,11 +89,13 @@ section {
   background-color: general.$bg-color;
   display: flex;
   justify-content: center;
-  height: 55vw;
+  height: 35vh;
 }
 
 #containerX .lampescene {
-  width: 40vw;
+  width: 35vw;
+  position: relative;
+  top: -12vw;
 }
 
 .arbejdecon {
@@ -101,7 +106,9 @@ section {
 }
 
 #containerX .arbejdescene {
-  width: 40vw;
+  width: 35vw;
+  position: relative;
+  top: -12vw;
 }
 
 .timescon {
@@ -109,32 +116,39 @@ section {
   background-color: general.$bg-color;
   display: flex;
   justify-content: center;
-  height: 55vw;
+  height: 35vh;
 }
 
 #containerX .timesscene {
   width: 50vw;
+  position: relative;
+  top: -12vw;
 }
 
 #containerX #arbejdsdag {
-  background-color: greenyellow;
+  background-color: general.$bg-color;
   width: 100vw;
   scroll-snap-align: end;
-  height: 55vw;
+  height: 35vh;
 }
 
 #containerX #timessquare {
-  background-color: orange;
+  background-color: general.$bg-color;
   width: 100vw;
   scroll-snap-align: end;
-  height: 55vw;
+  height: 35vh;
 }
 
 #containerX #lampe {
-  background-color: orange;
+  background-color: general.$bg-color;
   width: 100vw;
   scroll-snap-align: end;
-  height: 55vw;
+  height: 35vh;
+}
+
+.lampen {
+  position: relative;
+  top: -29vw;
 }
 
 // .scenelampe {
@@ -195,5 +209,48 @@ rect.times0 {
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+
+//LIGHT//
+
+.light {
+  animation-name: light;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes light {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ffe799;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #containerX #stearin {
+    width: 35vw;
+    position: relative;
+    top: -8vw;
+    margin-top: 3vw;
+  }
+
+  .timesscene,
+  .arbejdescene,
+  .lampescene {
+    width: 35vw;
+    position: relative;
+    top: -8vw;
+    margin-top: 6vw;
+  }
+
+  #containerX {
+    height: 70vh;
+  }
+
+  #punkter {
+    height: 12vh;
   }
 }

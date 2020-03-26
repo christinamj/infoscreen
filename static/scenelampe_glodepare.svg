@@ -29,7 +29,12 @@
 	.lampe23{opacity:0.68;fill:#0C0B08;}
 	.lampe24{opacity:0.68;stroke:#1D1D1B;stroke-miterlimit:10;}
 	.lampe25{opacity:0.71;fill:#0C0C0C;}
-	.lampe26{opacity:0.26;fill:#EFEA95;}
+	.lampe26{fill:#F7DF66;}
+	.lampe27{fill:none;stroke:#1D1D1B;stroke-width:0.25;stroke-miterlimit:10;}
+	.lampe28{fill:#333333;stroke:#1D1D1B;stroke-width:0.5;stroke-miterlimit:10;}
+	.lampe29{fill:none;stroke:#1D1D1B;stroke-width:0.5;stroke-miterlimit:10;}
+	.lampe30{stroke:#1D1D1B;stroke-width:2;stroke-miterlimit:10;}
+	.lampe31{opacity:0.26;fill:#EFEA95;}
 </style>
 <g id="scene">
 	<g>
@@ -136,8 +141,22 @@
 	<path class="lampe23" d="M23,437V193L314,27l1,65c0,0-77.6-5.7-142.8,76.2s-59.2,299.8,118.3,333.3L316,606L23,437z"/>
 	<path class="lampe24" d="M315,92l-1-65l293,170v243L316,606l-25.5-103.5c0,0,173.8,19.8,206-181S315,92,315,92z"/>
 	<polygon class="lampe25" points="2,183 317,2 632,184 632,428 321,607 2,426 	"/>
+	<path id="pare" class="lampe26" d="M287.2,287.1c5.1-7.8,4.9-7.6,4.9-7.6l0-3.2c0-0.7,0.5-1.2,1.1-1.2l9.2,0.1c0.6,0,1.1,0.6,1.1,1.2
+		l-0.1,2.8c0,0.3,0.1,0.5,0.2,0.7l3.3,5.2c0,0.1,0.1,0.1,0.1,0.2c0.6,0.9,6.6,10,0.1,17.2c0,0-8,9.8-18.3,0.8
+		c-0.3-0.3-0.6-0.6-0.9-1C286.4,300.5,282.6,294,287.2,287.1z"/>
+	<path class="lampe27" d="M298.7,275.3l-0.4,11.9c0,0,0.9,3.9,1.9,0.9c1.1-3.1-3.4-3.6-3.4-3.6s-2.6-0.3-1.9,3.1c0,0,2.6,2.1,1.6-7.4
+		l-0.3-4.9L298.7,275.3z"/>
+	<g id="outline">
+		<path class="lampe28" d="M302.7,270.9c0,0,2.1,1.4,0,2.8l-9.8-0.1c0,0-2.3-1.4,0-2.8L302.7,270.9z"/>
+		<path class="lampe28" d="M302.9,269.8l-10.3-0.1c-0.2,0-0.3-0.2-0.3-0.3c0.1-0.8,0.7-2.5,2.8-3c0,0,0,0,0.1,0l5.2,0.1
+			c0,0,0.1,0,0.1,0c0.3,0.1,2.2,0.8,2.6,3C303.2,269.6,303.1,269.8,302.9,269.8z"/>
+		<path class="lampe28" d="M300.1,266.4c0,0-2.1-4.4-4.9-0.1L300.1,266.4z"/>
+		<path class="lampe29" d="M296.2,190.5c-1.1,8.5-3.2,13.3,0,19.9c3.2,6.6,5.3,17.1,2.1,23.7c-3.2,6.6-1.1,10.9,0,17.6
+			s-0.5,12.9-0.5,12.9"/>
+		<ellipse class="lampe30" cx="295.7" cy="190.7" rx="5.8" ry="2.7"/>
+	</g>
 </g>
 <g id="lys">
-	<ellipse class="lampe26" cx="310" cy="292.2" rx="196" ry="204.3"/>
+	<ellipse class="lampe31" cx="310" cy="292.2" rx="196" ry="204.3"/>
 </g>
 </svg>
