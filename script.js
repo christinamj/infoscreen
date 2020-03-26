@@ -16,7 +16,7 @@ function start() {
 
 async function getJson() {
   console.log("JSON");
-  let response1 = await fetch("solen.svg");
+  let response1 = await fetch("solen-01.svg");
   let mySvgData1 = await response1.text();
   document.querySelector(".sol").innerHTML = mySvgData1;
 }
