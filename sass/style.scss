@@ -42,7 +42,7 @@ main {
   scroll-behavior: smooth;
   background-color: general.$bg-color;
   overflow-y: hidden;
-  height: 65vh;
+  height: 75vh;
   padding-top: 5vw;
 }
 
@@ -249,7 +249,8 @@ rect.times0 {
 }
 
 .lampeikon,
-.stearinikon {
+.stearinikon,
+.arbejdeikon {
   height: 5vw;
   width: 5vw;
 }

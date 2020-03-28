@@ -5,11 +5,19 @@ window.addEventListener("DOMContentLoaded", start);
 function start() {
   console.log("running");
   document.querySelector(".startknap").addEventListener("click", firstScene);
+  document.querySelector(".stearinikon").addEventListener("click", firstScene);
 
   document.querySelector("#stearin").addEventListener("click", showTekstBox);
   document.querySelector("#lampe > div.lampecon > div.lampescene").addEventListener("click", showTekstBox2);
   document.querySelector("#arbejdsdag").addEventListener("click", showTekstBox3);
   document.querySelector("#timessquare > div.timescon > div").addEventListener("click", showTekstBox4);
+  document.querySelector(".lampeikon").addEventListener("click", removeClass);
+  document.querySelector(".arbejdeikon").addEventListener("click", removeClass);
+  document.querySelector(".trafiklys").addEventListener("click", removeClass);
+
+  document.querySelector(".stearinikon").addEventListener("click", removeClass2);
+  document.querySelector(".arbejdeikon").addEventListener("click", removeClass2);
+  document.querySelector(".trafiklys").addEventListener("click", removeClass2);
 
   document.querySelector(".zoom_out").addEventListener("animationend", showText);
   document.querySelector("#punkter > a:nth-child(2)").addEventListener("click", secondScene);
@@ -49,6 +57,18 @@ async function getJson() {
   let response8 = await fetch("stearinlys_stearinlys.svg");
   let mySvgData8 = await response8.text();
   document.querySelector(".stearinikon").innerHTML = mySvgData8;
+
+  let response9 = await fetch("stikkontakt.svg");
+  let mySvgData9 = await response9.text();
+  document.querySelector(".arbejdeikon").innerHTML = mySvgData9;
+}
+
+function removeClass() {
+  document.querySelector("ellipse.stearin20").classList.remove("light");
+}
+
+function removeClass2() {
+  document.querySelector("ellipse.lampe31").classList.remove("light");
 }
 
 function showText() {
