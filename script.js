@@ -5,6 +5,12 @@ window.addEventListener("DOMContentLoaded", start);
 function start() {
   console.log("running");
   document.querySelector(".startknap").addEventListener("click", firstScene);
+
+  document.querySelector("#stearin").addEventListener("click", showTekstBox);
+  document.querySelector("#lampe > div.lampecon > div.lampescene").addEventListener("click", showTekstBox2);
+  document.querySelector("#arbejdsdag").addEventListener("click", showTekstBox3);
+  document.querySelector("#timessquare > div.timescon > div").addEventListener("click", showTekstBox4);
+
   document.querySelector(".zoom_out").addEventListener("animationend", showText);
   document.querySelector("#punkter > a:nth-child(2)").addEventListener("click", secondScene);
   getJson();
@@ -70,4 +76,28 @@ function secondScene() {
   document.querySelector("#pare").classList.add("pulse");
   document.querySelector("#mork > path.lampe27").classList.add("pulse");
   document.querySelector("#outline").classList.add("pulse");
+}
+
+function showTekstBox() {
+  document.querySelector(".tekst_lys").style.display = "block";
+  document.querySelector(".tekst_lys").classList.add("scalein");
+}
+
+function showTekstBox2() {
+  document.querySelector(".tekst_lampe").style.display = "block";
+  document.querySelector(".tekst_lampe").classList.add("scalein");
+}
+
+function showTekstBox3() {
+  document.querySelector(".tekst_skriv").style.display = "block";
+  document.querySelector(".tekst_vacum").style.display = "block";
+  document.querySelector(".tekst_komfur").style.display = "block";
+  document.querySelector(".tekst_skriv").classList.add("scalein");
+  document.querySelector(".tekst_vacum").classList.add("scalein");
+  document.querySelector(".tekst_komfur").classList.add("scalein");
+}
+
+function showTekstBox4() {
+  document.querySelector(".tekst_times").style.display = "block";
+  document.querySelector(".tekst_times").classList.add("scalein");
 }

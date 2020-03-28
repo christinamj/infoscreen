@@ -202,36 +202,41 @@ rect.times0 {
   position: relative;
   bottom: 35vh;
   left: 7vw;
+  display: none;
 }
 
 .tekst_lampe {
   width: 35vw;
   position: relative;
-  bottom: 35vh;
-  left: 52vw;
+  bottom: 36vh;
+  left: 58vw;
   text-align: right;
+  display: none;
 }
 
 .tekst_vacum {
   width: 40vw;
   position: relative;
-  bottom: 50vh;
+  bottom: 54vh;
   left: 4vw;
+  display: none;
 }
 
 .tekst_skriv {
   width: 25vw;
   position: relative;
-  bottom: 54vh;
+  bottom: 59vh;
   left: 70vw;
   text-align: right;
+  display: none;
 }
 
 .tekst_komfur {
   width: 25vw;
   position: relative;
-  bottom: 10vh;
+  bottom: 25vh;
   left: 5vw;
+  display: none;
 }
 
 .tekst_times {
@@ -239,6 +244,7 @@ rect.times0 {
   position: relative;
   top: 18vh;
   left: 14vw;
+  display: none;
 }
 
 // ANIMATIONER
