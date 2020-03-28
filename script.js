@@ -8,10 +8,6 @@ function start() {
   document.querySelector(".zoom_out").addEventListener("animationend", showText);
   document.querySelector("#punkter > a:nth-child(2)").addEventListener("click", secondScene);
   getJson();
-  getJson2();
-  getJson3();
-  getJson4();
-  getJson5();
 }
 
 async function getJson() {
@@ -19,32 +15,34 @@ async function getJson() {
   let response1 = await fetch("solen-01.svg");
   let mySvgData1 = await response1.text();
   document.querySelector(".sol").innerHTML = mySvgData1;
-}
 
-async function getJson2() {
-  console.log("JSON");
   let response2 = await fetch("scenestearin_stearin.svg");
   let mySvgData2 = await response2.text();
   document.querySelector("#stearin").innerHTML = mySvgData2;
-}
 
-async function getJson3() {
-  console.log("JSON");
   let response3 = await fetch("scenelampe_glodepare.svg");
   let mySvgData3 = await response3.text();
   document.querySelector(".lampescene").innerHTML = mySvgData3;
-}
 
-async function getJson4() {
   let response4 = await fetch("scene3_elements.svg");
   let mySvgData4 = await response4.text();
   document.querySelector(".arbejdescene").innerHTML = mySvgData4;
-}
 
-async function getJson5() {
   let response5 = await fetch("times_times2-01.svg");
   let mySvgData5 = await response5.text();
   document.querySelector(".timesscene").innerHTML = mySvgData5;
+
+  let response6 = await fetch("trafik_trafik.svg");
+  let mySvgData6 = await response6.text();
+  document.querySelector(".trafiklys").innerHTML = mySvgData6;
+
+  let response7 = await fetch("lampen_lampen.svg");
+  let mySvgData7 = await response7.text();
+  document.querySelector(".lampeikon").innerHTML = mySvgData7;
+
+  let response8 = await fetch("stearinlys_stearinlys.svg");
+  let mySvgData8 = await response8.text();
+  document.querySelector(".stearinikon").innerHTML = mySvgData8;
 }
 
 function showText() {
