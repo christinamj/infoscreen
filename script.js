@@ -6,6 +6,7 @@ function start() {
   console.log("running");
   document.querySelector(".startknap").addEventListener("click", firstScene);
   document.querySelector(".stearinikon").addEventListener("click", firstScene);
+  document.querySelector(".sol").classList.add("zoom_out");
 
   document.querySelector("#stearin").addEventListener("click", showTekstBox);
   document.querySelector("#lampe > div.lampecon > div.lampescene").addEventListener("click", showTekstBox2);
@@ -16,13 +17,18 @@ function start() {
   document.querySelector(".lampeikon").addEventListener("click", removeClass);
   document.querySelector(".arbejdeikon").addEventListener("click", removeClass);
   document.querySelector(".trafiklys").addEventListener("click", removeClass);
-
   document.querySelector(".stearinikon").addEventListener("click", removeClass2);
   document.querySelector(".arbejdeikon").addEventListener("click", removeClass2);
   document.querySelector(".trafiklys").addEventListener("click", removeClass2);
 
+  document.querySelector(".lampeikon").addEventListener("click", removeTextStearin);
+  document.querySelector(".arbejdeikon").addEventListener("click", removeTextLampe);
+  document.querySelector(".trafiklys").addEventListener("click", removeTextArbejde);
+  document.querySelector(".stearinikon").addEventListener("click", removeTextTrafik);
+
   document.querySelector(".zoom_out").addEventListener("animationend", showText);
   document.querySelector("#punkter > a:nth-child(2)").addEventListener("click", secondScene);
+  document.querySelector(".restart").addEventListener("click", restart);
   getJson();
 }
 
@@ -120,4 +126,80 @@ function showTekstBox3() {
 function showTekstBox4() {
   document.querySelector(".tekst_times").style.display = "block";
   document.querySelector(".tekst_times").classList.add("scalein");
+}
+
+function removeTextStearin() {
+  document.querySelector(".tekst_lys").style.display = "none";
+  document.querySelector(".tekst_lys").classList.remove("scalein");
+  document.querySelector(".tekst_times").style.display = "none";
+  document.querySelector(".tekst_times").classList.remove("scalein");
+  document.querySelector(".tekst_skriv").style.display = "none";
+  document.querySelector(".tekst_vacum").style.display = "none";
+  document.querySelector(".tekst_komfur").style.display = "none";
+  document.querySelector(".tekst_skriv").classList.remove("scalein");
+  document.querySelector(".tekst_vacum").classList.remove("scalein");
+  document.querySelector(".tekst_komfur").classList.remove("scalein");
+}
+
+function removeTextTrafik() {
+  document.querySelector(".tekst_times").style.display = "none";
+  document.querySelector(".tekst_times").classList.remove("scalein");
+  document.querySelector(".tekst_lampe").style.display = "none";
+  document.querySelector(".tekst_lampe").classList.remove("scalein");
+  document.querySelector(".tekst_skriv").style.display = "none";
+  document.querySelector(".tekst_vacum").style.display = "none";
+  document.querySelector(".tekst_komfur").style.display = "none";
+  document.querySelector(".tekst_skriv").classList.remove("scalein");
+  document.querySelector(".tekst_vacum").classList.remove("scalein");
+  document.querySelector(".tekst_komfur").classList.remove("scalein");
+}
+
+function removeTextLampe() {
+  document.querySelector(".tekst_lampe").style.display = "none";
+  document.querySelector(".tekst_lampe").classList.remove("scalein");
+  document.querySelector(".tekst_times").style.display = "none";
+  document.querySelector(".tekst_times").classList.remove("scalein");
+  document.querySelector(".tekst_lys").style.display = "none";
+  document.querySelector(".tekst_lys").classList.remove("scalein");
+}
+
+function removeTextArbejde() {
+  document.querySelector(".tekst_skriv").style.display = "none";
+  document.querySelector(".tekst_vacum").style.display = "none";
+  document.querySelector(".tekst_komfur").style.display = "none";
+  document.querySelector(".tekst_skriv").classList.remove("scalein");
+  document.querySelector(".tekst_vacum").classList.remove("scalein");
+  document.querySelector(".tekst_komfur").classList.remove("scalein");
+  document.querySelector(".tekst_lys").style.display = "none";
+  document.querySelector(".tekst_lys").classList.remove("scalein");
+  document.querySelector(".tekst_lampe").style.display = "none";
+  document.querySelector(".tekst_lampe").classList.remove("scalein");
+}
+
+function restart() {
+  document.querySelector(".startknap").style.display = "none";
+  document.querySelector(".zoom_out").style.display = "block";
+  document.querySelector(".startknap").classList.remove("scalein");
+
+  //CLEANUP STEARINLYS
+  document.querySelector(".tekst_lys").style.display = "none";
+  document.querySelector(".tekst_lys").classList.remove("scalein");
+
+  //CLEAN UP GLØDEPÆRE
+  document.querySelector(".tekst_lampe").style.display = "none";
+  document.querySelector(".tekst_lampe").classList.remove("scalein");
+
+  //CLEAN UP ARBEJDSDAG
+  document.querySelector(".tekst_skriv").style.display = "none";
+  document.querySelector(".tekst_vacum").style.display = "none";
+  document.querySelector(".tekst_komfur").style.display = "none";
+  document.querySelector(".tekst_skriv").classList.remove("scalein");
+  document.querySelector(".tekst_vacum").classList.remove("scalein");
+  document.querySelector(".tekst_komfur").classList.remove("scalein");
+
+  //CLEAN UP TIMES
+  document.querySelector(".tekst_times").style.display = "none";
+  document.querySelector(".tekst_times").classList.remove("scalein");
+
+  start();
 }
