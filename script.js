@@ -10,7 +10,9 @@ function start() {
   document.querySelector("#stearin").addEventListener("click", showTekstBox);
   document.querySelector("#lampe > div.lampecon > div.lampescene").addEventListener("click", showTekstBox2);
   document.querySelector("#arbejdsdag").addEventListener("click", showTekstBox3);
+
   document.querySelector("#timessquare > div.timescon > div").addEventListener("click", showTekstBox4);
+
   document.querySelector(".lampeikon").addEventListener("click", removeClass);
   document.querySelector(".arbejdeikon").addEventListener("click", removeClass);
   document.querySelector(".trafiklys").addEventListener("click", removeClass);
